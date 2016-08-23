@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "651003279384",
+    "firebase_url": "https://yapiyoz-94f0c.firebaseio.com",
+    "project_id": "yapiyoz-94f0c",
+    "storage_bucket": "yapiyoz-94f0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651003279384:android:d0ac4600ff6d8716",
+        "android_client_info": {
+          "package_name": "com.example.mkemaltas.yapiyoz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651003279384-b5ih8jdi91focpctn5cqjfoav5b5iqc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mkemaltas.yapiyoz",
+            "certificate_hash": "F232C1FE5CE05BD0E54F9FB9847586B3F6577867"
+          }
+        },
+        {
+          "client_id": "651003279384-pa43dtqsvrrp9jqoq4rem6ea9hlmmhen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyNpPB4xUYgGo7zMmXoHgqIo1CCjuBgoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651003279384-pa43dtqsvrrp9jqoq4rem6ea9hlmmhen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

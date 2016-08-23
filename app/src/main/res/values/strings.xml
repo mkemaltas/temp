@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Yapiyoz</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_twitter">Sign in with Twitter</string>
+    <string name="sign_in_with_linkedin">Sign in with LinkedIn</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
 </resources>

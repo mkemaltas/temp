@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gradient="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.mkemaltas.yapiyoz.BaseActivity">
+   <!--
+        <com.dynamitechetan.flowinggradient.FlowingGradient
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    -->
+    <LinearLayout
+        android:id="@+id/login_fragment_email_login_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_login_layouts_dark"
+        android:layout_height="250dp"
+        android:padding="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp">
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/login_fragment_email_login_ll"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_login_layouts_light"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/linearLayout">
+
+        <!--
+        <com.shaishavgandhi.loginbuttons.GooglePlusButton
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        app:iconSize="30dp"
+        android:layout_marginBottom="@dimen/login_button_vertical_margin"
+        android:text="@string/sign_in_with_google"
+        android:layout_height="wrap_content"
+        />
+        -->
+
+    <com.shaishavgandhi.loginbuttons.FacebookButton
+        android:id="@+id/login_fragment_fb_button"
+        android:layout_width="match_parent"
+        android:text="@string/sign_in_with_facebook"
+        app:iconSize="30dp"
+        app:roundedCorner="true"
+        app:roundedCornerRadius="10dp"
+        android:layout_marginTop="@dimen/login_button_vertical_margin"
+        android:layout_marginBottom="@dimen/login_button_vertical_margin"
+        android:layout_height="wrap_content"
+        />
+
+    <com.shaishavgandhi.loginbuttons.LinkedInButton
+        android:id="@+id/login_fragment_linkedin_button"
+        android:layout_width="match_parent"
+        app:iconSize="30dp"
+        app:roundedCorner="true"
+        app:roundedCornerRadius="10dp"
+        android:layout_marginBottom="@dimen/login_button_vertical_margin"
+        android:text="@string/sign_in_with_linkedin"
+        android:layout_height="wrap_content"
+        />
+    <com.shaishavgandhi.loginbuttons.TwitterButton
+        android:id="@+id/login_fragment_twitter_button"
+        android:layout_width="match_parent"
+        app:iconSize="30dp"
+        app:roundedCorner="true"
+        app:roundedCornerRadius="10dp"
+        android:layout_marginBottom="@dimen/login_button_vertical_margin"
+        android:text="@string/sign_in_with_twitter"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
