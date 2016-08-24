@@ -4,4 +4,6 @@
     <string name="sign_in_with_twitter">Sign in with Twitter</string>
     <string name="sign_in_with_linkedin">Sign in with LinkedIn</string>
     <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>
