@@ -4,33 +4,49 @@
     xmlns:gradient="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_base"
-    android:background="@color/colorPrimaryLight"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_login_fragment_gradient"
 
     tools:context="com.example.mkemaltas.yapiyoz.BaseActivity">
-    <!--
-         <com.dynamitechetan.flowinggradient.FlowingGradient
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         />
-     -->
+
+
     <LinearLayout
         android:id="@+id/login_fragment_login_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_above="@+id/login_fragment_or_ll"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <EditText
-            android:id="@+id/login_fragment_username_et"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/username"
-            android:inputType="text" />
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/login_fragment_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/login_fragment_email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/login_fragment_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/login_fragment_password_et"
@@ -42,80 +58,115 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
             android:padding="5dp">
 
             <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/bg_login_button_dark" />
+                android:id="@+id/login_fragment_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_login_button_dark"
+                android:text="@string/sign_in" />
+
+            <TextView
+                android:id="@+id/login_fragment_not_a_member_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/not_a_member_sign_up_now" />
+
+            <TextView
+                android:id="@+id/login_fragment_forgot_password_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/forgot_password" />
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/login_fragment_or_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login_fragment_login_ll"
-        android:gravity="center"
-        android:text="OR"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30dp"
-        android:textStyle="bold" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/login_fragment_or_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/login_fragment_other_login_ll"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="5"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/login_fragment_or_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="5"
+            android:background="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_fragment_other_login_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/login_fragment_or_tv"
-        android:layout_margin="10dp"
+
+        android:layout_margin="5dp"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="15dp">
 
-        <!--
-        <com.shaishavgandhi.loginbuttons.GooglePlusButton
-        android:layout_width="match_parent"
-        android:textAlignment="center"
-        app:iconSize="30dp"
-        android:layout_marginBottom="@dimen/login_button_vertical_margin"
-        android:text="@string/sign_in_with_google"
-        android:layout_height="wrap_content"
-        />
-        -->
-
-        <com.shaishavgandhi.loginbuttons.FacebookButton
+        <com.facebook.login.widget.LoginButton
             android:id="@+id/login_fragment_fb_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/login_button_vertical_margin"
             android:layout_marginTop="@dimen/login_button_vertical_margin"
-            android:text="@string/sign_in_with_facebook"
-            app:iconSize="30dp"
+            android:background="@drawable/bg_facebook_button"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:text="@string/sign_in_with_facebook" />
+
+        <com.shaishavgandhi.loginbuttons.GooglePlusButton
+            android:id="@+id/login_fragment_google_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="@dimen/login_button_vertical_margin"
+            android:layout_marginTop="@dimen/login_button_vertical_margin"
+            android:text="@string/sign_in_with_google"
+            app:iconSize="20dp"
             app:roundedCorner="true"
             app:roundedCornerRadius="10dp" />
 
-        <com.shaishavgandhi.loginbuttons.LinkedInButton
-            android:id="@+id/login_fragment_linkedin_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/login_button_vertical_margin"
-            android:text="@string/sign_in_with_linkedin"
-            app:iconSize="30dp"
-            app:roundedCorner="true"
-            app:roundedCornerRadius="10dp" />
 
-        <com.shaishavgandhi.loginbuttons.TwitterButton
-            android:id="@+id/login_fragment_twitter_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/login_button_vertical_margin"
-            android:text="@string/sign_in_with_twitter"
-            app:iconSize="30dp"
-            app:roundedCorner="true"
-            app:roundedCornerRadius="10dp" />
     </LinearLayout>
 
+    <ProgressBar
+        android:id="@+id/login_fragment_progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone" />
 
 </RelativeLayout>

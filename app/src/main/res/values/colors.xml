@@ -3,7 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#212b6b</color>
     <color name="colorPrimaryLight">#95a2f7</color>
+    <color name="colorPrimaryLighter">#dadef9</color>
     <color name="colorPrimaryDarkTransparent">#66212b6b</color>
-    <color name="colorPrimaryLightTransparent">#6695a2f7</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryLightTransparent">#3595a2f7</color>
+    <color name="colorFacebookPrimary">#3B5998</color>
+    <color name="colorContrast">#aff4d8</color>
+    <color name="colorAccent">#ffffff</color>
 </resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_fragment_gradient"
+
+    tools:context="com.example.mkemaltas.yapiyoz.BaseActivity">
+
+
+    <LinearLayout
+        android:id="@+id/signup_fragment_signup_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="100dp"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/signup_fragment_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signup_fragment_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/signup_fragment_signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_login_button_dark"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:id="@+id/signup_fragment_already_member_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/already_a_member_sign_in_now" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/signup_fragment_progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone" />
+
+</RelativeLayout>

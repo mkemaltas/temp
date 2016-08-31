@@ -1,9 +1,21 @@
 <resources>
+    <string name="facebook_app_id">357696477895062</string>
     <string name="app_name">Yapiyoz</string>
-    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_facebook">SIGN IN WITH FACEBOOK</string>
     <string name="sign_in_with_twitter">Sign in with Twitter</string>
     <string name="sign_in_with_linkedin">Sign in with LinkedIn</string>
-    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_google">SIGN IN WITH GOOGLE</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="not_a_member_sign_up_now">Not a member? Sign up now.</string>
+    <string name="already_a_member_sign_in_now">Already a member? Sign in now.</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="or">OR</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="forgot_password_question">Forgot password?</string>
+    <string name="enter_your_e_mail_addres_to_reset_your_password">Enter your e-mail addres to reset your password</string>
+    <string name="back"><![CDATA[<< Back]]></string>
 </resources>
